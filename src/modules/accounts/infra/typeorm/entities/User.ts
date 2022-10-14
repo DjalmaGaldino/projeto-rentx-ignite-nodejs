@@ -31,6 +31,7 @@ class User {
   constructor() {
     if(!this.id) {
       this.id = uuidv4();
+      
     }
   }
 

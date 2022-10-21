@@ -36,7 +36,7 @@ export async function ensureAuthenticated(request: Request, response: Response, 
     }
 
     request.user = {
-      id: user.id
+      id: user.user.id
     }
 
     next()

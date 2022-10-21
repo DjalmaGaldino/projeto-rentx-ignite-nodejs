@@ -1,4 +1,5 @@
 import { UsersRepositoryInMemory } from "@modules/accounts/repositories/in-memory/UsersRepositoryInMemory";
+import {jest} from '@jest/globals'
 import { UsersTokensRepositoryInMemory } from "@modules/accounts/repositories/in-memory/UsersTokensRepositoryInMemory";
 import { DayjsDateProvider } from "@shared/container/providers/DateProvider/implementations/DayjsDateProvider";
 import { MailProviderInMemory } from "@shared/container/providers/MailProvider/in-Memory/MailProviderInMemory";

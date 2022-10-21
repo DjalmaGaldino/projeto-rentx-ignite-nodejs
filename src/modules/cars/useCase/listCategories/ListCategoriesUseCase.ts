@@ -7,10 +7,10 @@ import { inject, injectable } from 'tsyringe';
 class ListCategoriesUseCase {
   constructor(
     @inject("CategoriesRepository")
-    private categorieRepository: ICategoriesRepository) {}
+    private categoriesRepository: ICategoriesRepository) {}
 
   async execute(): Promise<Category[]> {
-    const categories = await this.categorieRepository.list();
+    const categories = await this.categoriesRepository.list();
 
     return categories;
   }
